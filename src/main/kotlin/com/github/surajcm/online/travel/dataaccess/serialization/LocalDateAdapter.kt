@@ -14,7 +14,7 @@ class LocalDateAdapter: XmlAdapter<String, LocalDate>() {
         }
     }
 
-    override fun marshal(date: LocalDate?): String {
-        return date.toString()
+    override fun marshal(date: LocalDate?): String? {
+        return date?.toString()
     }
 }
