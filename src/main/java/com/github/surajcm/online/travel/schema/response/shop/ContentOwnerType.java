@@ -1,0 +1,102 @@
+
+package com.github.surajcm.online.travel.schema.response.shop;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
+
+
+/**
+ * Airline or Organization from which the associated content originates.
+ * 
+ * <p>Java class for ContentOwnerType complex type</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * 
+ * <pre>{@code
+ * <complexType name="ContentOwnerType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="Carrier" type="{http://www.iata.org/IATA/2015/00/2019.2/IATA_AirShoppingRS}CarrierType"/>
+ *         <element name="Org" type="{http://www.iata.org/IATA/2015/00/2019.2/IATA_AirShoppingRS}OrgType"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "ContentOwnerType", namespace = "http://www.iata.org/IATA/2015/00/2019.2/IATA_AirShoppingRS", propOrder = {
+    "carrier",
+    "org"
+})
+public class ContentOwnerType {
+
+    /**
+     * The organization which carries the passenger, baggage, or goods, and/or commits to delivering the carriage as well as any related services such as issuance of ticket, creation of Order, etc.
+     * 
+     */
+    @XmlElement(name = "Carrier", namespace = "http://www.iata.org/IATA/2015/00/2019.2/IATA_AirShoppingRS", required = true)
+    protected CarrierType carrier;
+    /**
+     * An organized structure set up for a particular purpose, such as a business, government body, department, charity, or financial institution .
+     * 
+     */
+    @XmlElement(name = "Org", namespace = "http://www.iata.org/IATA/2015/00/2019.2/IATA_AirShoppingRS", required = true)
+    protected OrgType org;
+
+    /**
+     * The organization which carries the passenger, baggage, or goods, and/or commits to delivering the carriage as well as any related services such as issuance of ticket, creation of Order, etc.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CarrierType }
+     *     
+     */
+    public CarrierType getCarrier() {
+        return carrier;
+    }
+
+    /**
+     * Sets the value of the carrier property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CarrierType }
+     *     
+     * @see #getCarrier()
+     */
+    public void setCarrier(CarrierType value) {
+        this.carrier = value;
+    }
+
+    /**
+     * An organized structure set up for a particular purpose, such as a business, government body, department, charity, or financial institution .
+     * 
+     * @return
+     *     possible object is
+     *     {@link OrgType }
+     *     
+     */
+    public OrgType getOrg() {
+        return org;
+    }
+
+    /**
+     * Sets the value of the org property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link OrgType }
+     *     
+     * @see #getOrg()
+     */
+    public void setOrg(OrgType value) {
+        this.org = value;
+    }
+
+}

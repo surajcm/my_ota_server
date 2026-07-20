@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IATA_AirShoppingRQ xmlns="http://www.iata.org/IATA/2015/00/2019.2/IATA_AirShoppingRQ">
+  <PayloadAttributes>
+    <EchoTokenText>demo-echo-123</EchoTokenText>
+  </PayloadAttributes>
+</IATA_AirShoppingRQ>

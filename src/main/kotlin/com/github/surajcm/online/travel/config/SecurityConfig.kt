@@ -16,6 +16,9 @@ class SecurityConfig {
             .authorizeHttpRequests { authz ->
                 authz
                     .requestMatchers("/actuator/health", "/actuator/info").permitAll()
+                    // Sandbox: NDC endpoints and API docs are open so test tooling can reach them.
+                    .requestMatchers("/", "/ndc/**").permitAll()
+                    .requestMatchers("/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**").permitAll()
                     .anyRequest().authenticated()
             }
             .httpBasic { }

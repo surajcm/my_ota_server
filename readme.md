@@ -3,7 +3,7 @@
 </h1>
 <p align="center">
     <a href="https://github.com/surajcm/my_ota_server/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/surajcm/my_ota_server?style=flat"></a>
-    <a href="https://github.com/surajcm/my_ota_server/actions/workflows/maven.yml" title="Tests"><img src="https://github.com/surajcm/my_ota_server/actions/workflows/maven.yml/badge.svg"></a>
+    <a href="https://github.com/surajcm/my_ota_server/actions/workflows/build.yml" title="Tests"><img src="https://github.com/surajcm/my_ota_server/actions/workflows/build.yml/badge.svg"></a>
     <a href="https://github.com/surajcm/my_ota_server/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/surajcm/my_ota_server?style=flat"></a>
     <a href="https://github.com/surajcm/my_ota_server/blob/master/LICENSE" title="License"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat"></a>
     <a href="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" title="code_of_conduct.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg"></a>
